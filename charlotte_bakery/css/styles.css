@@ -12274,7 +12274,7 @@ html {
       ../退出一層資料夾
       /指向伺服器的根目錄
   */
-  background-image: url("/image/front-cover.jpg");
+  background-image: url('image/front-cover.jpg');
   background-size: cover;
   /* 固定背景圖 */
   background-attachment: fixed;

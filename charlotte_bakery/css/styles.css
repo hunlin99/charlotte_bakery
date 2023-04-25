@@ -271,10 +271,6 @@ a {
   text-decoration: underline;
 }
 
-a:hover {
-  color: #0a58ca;
-}
-
 a:not([href]):not([class]),
 a:not([href]):not([class]):hover {
   color: inherit;
@@ -12274,18 +12270,18 @@ html {
       ../退出一層資料夾
       /指向伺服器的根目錄
   */
-  background-image: url(../image/front-cover.jpg);
+  background-image: url(../image/front-cover1.jpg);
   background-size: cover;
   /* 固定背景圖 */
   background-attachment: fixed;
 }
 
 #radius {
-  border-radius: 25px;
+  border-radius: 15px;
 }
 
 #radius-top {
-  border-radius: 25px 25px 0 0;
+  border-radius: 15px 15px 0 0;
 }
 
 .hideme {
@@ -12324,7 +12320,7 @@ html {
   transition-duration: 0.5s;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
-  border-radius: 0 0 25px 25px;
+  border-radius: 0 0 15px 15px;
 }
 
 .hvr-bounce-to-right:hover,
@@ -12394,6 +12390,9 @@ html {
 /* 鼠标悬停时更换背景图片 */
 .position-relative:hover img {
   filter: brightness(0.3);
+}
+
+.position-relative img {
   transition: 0.5s;
 }
 
@@ -12414,9 +12413,80 @@ html {
   color: #fff;
   width: 100%;
   opacity: 0;
+  transition: 0.5s;
 }
 
 .position-relative:hover .text-wrapper {
   opacity: 1;
   transition: 1s;
+}
+
+/* Underline From Left */
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #693529;
+  height: 3px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-left:hover:before,
+.hvr-underline-from-left:focus:before,
+.hvr-underline-from-left:active:before {
+  right: 0;
+}
+
+.bg-color-0 {
+  background-color: #FBF9F8;
+}
+
+.bg-color-1 {
+  background-color: #F7EDE8;
+}
+
+.bg-color-2 {
+  background-color: #B5866B;
+}
+
+.bg-color-3 {
+  background-color: #8B493B;
+}
+
+.bg-color-4 {
+  background-color: #693529;
+}
+
+.color-1 {
+  color: #FBF9F8;
+}
+
+.color-2 {
+  color: #FBF9F8;
+}
+
+.color-3 {
+  color: #8B493B;
+}
+
+.color-4 {
+  color: #693529;
 }
